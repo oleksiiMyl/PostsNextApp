@@ -1,0 +1,27 @@
+.currentPost {
+  margin: $indent-lg 0;
+  padding: $indent-md;
+  background-color: $white-color;
+  border-radius: $border-radius-md;
+  box-shadow: $box-shadow;
+
+  &Title {
+    margin-bottom: $indent-md;
+  }
+
+  &Body {
+    margin-bottom: $indent-md;
+  }
+
+  &Author {
+    display: flex;
+    align-items: center;
+    gap: $indent-sm;
+    font-size: 14px;
+    color: $light-text-color;
+  }
+
+  &Comments {
+    margin: $indent-sm 0;
+  }
+}

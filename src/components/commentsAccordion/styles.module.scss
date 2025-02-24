@@ -1,0 +1,89 @@
+.comments {
+  position: relative;
+  padding: $indent-sm 0;
+
+  &Input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &:checked ~ .commentsContent {
+      display: block;
+    }
+
+    &:checked ~ .commentsLabel:after {
+      transform: translateY(-50%) rotate(225deg);
+    }
+
+    &:focus-visible ~ .commentsLabel {
+      outline: auto;
+    }
+  }
+
+  &Label {
+    position: relative;
+    display: block;
+    padding: $indent-sm 0;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      width: 8px;
+      height: 8px;
+      border-bottom: 2px solid $border-dark-color;
+      border-right: 2px solid $border-dark-color;
+      transform-origin: center center;
+      transform: translateY(-50%) rotate(45deg);
+      transition: transform 0.2s;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: $bg-color;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
+  }
+
+  &Content {
+    display: none;
+  }
+
+  &List {
+    padding: $indent-sm;
+
+    &Item {
+      padding: $indent-md;
+
+      &:nth-child(odd) {
+        background-color: $bg-light-color;
+      }
+    }
+  }
+
+  &Name {
+    margin-bottom: $indent-sm;
+  }
+
+  &Author {
+    font-size: 12px;
+  }
+
+  &Body {
+    margin-top: $indent-sm;
+  }
+}

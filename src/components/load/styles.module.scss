@@ -1,0 +1,33 @@
+.load {
+  display: flex;
+  justify-content: center;
+  margin: 200px 0;
+
+  &Symbol {
+    width: 20px;
+    height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@for $i from 1 through 7 {
+  .loadSymbol:nth-child(#{$i}) {
+    animation: loadAnimation 2s ease-in-out calc(0.2 * #{$i}s) infinite;
+  }
+}
+
+@keyframes loadAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

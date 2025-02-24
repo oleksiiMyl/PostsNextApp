@@ -1,0 +1,5 @@
+.listItem {
+  &:not(:first-child) {
+    margin-top: $indent-md;
+  }
+}

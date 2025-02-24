@@ -1,0 +1,24 @@
+.postCard {
+  background-color: $white-color;
+  padding: $indent-sm;
+  border: 1ps solid $border-color;
+  border-radius: $border-radius-md;
+  transition: box-shadow 0.5s;
+
+  &Title {
+    margin-bottom: $indent-sm;
+  }
+
+  &Action {
+    color: $primary-color;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary-color-hover;
+    }
+  }
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}

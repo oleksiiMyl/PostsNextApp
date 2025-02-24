@@ -1,0 +1,32 @@
+.link {
+  transition: color 0.3s;
+  color: $text-color;
+
+  &:hover {
+    color: $text-hover-color;
+  }
+
+  &:visited {
+    color: $text-color;
+
+    &:hover {
+      color: $text-hover-color;
+    }
+  }
+
+  &Primary {
+    color: $primary-color;
+
+    &:hover {
+      color: $primary-color-hover;
+    }
+
+    &:visited {
+      color: $primary-color;
+
+      &:hover {
+        color: $primary-color-hover;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.imageWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  padding: $indent-md;
+  border-radius: $border-radius-md;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &WithBorder {
+    border: 2px solid $border-color;
+  }
+
+  &Lg {
+    width: 400px;
+    height: 400px;
+  }
+}
