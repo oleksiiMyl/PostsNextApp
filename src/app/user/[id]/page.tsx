@@ -10,12 +10,20 @@ import ListItem from '../../../components/list/listItem';
 import ImageWrap from '../../../components/imageWrap';
 import Link from '../../../components/link';
 
-import { getUser } from '../../../api/userService';
+import { getUser, getUsers } from '../../../api/userService';
 import { objectIsEmpty } from '../../../utils/general';
 import { RouteByIdType } from '../../../types/routes';
 import { UserType } from '../../../types/data';
 
 import UserIcon from '../../../../public/users-icon.jpg';
+
+export async function generateStaticParams() {
+  const users: UserType[] = await getUsers();
+
+  return users.map((user) => ({
+    id: String(user.id),
+  }));
+}
 
 export const generateMetadata = async ({ params }: RouteByIdType) => {
   const { id } = await params;
