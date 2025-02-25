@@ -2,7 +2,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   sassOptions: {
-    prependData: `@import "src/styles/variables.scss";`,
+    additionalData: '@use "src/styles/variables.scss" as *;',
   },
 };
 

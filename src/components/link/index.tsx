@@ -4,11 +4,11 @@ import { LinkType } from '../../types/components';
 
 import styles from './styles.module.scss';
 
-const Link = ({ href, children, variant }: LinkType) => (
+const Link = ({ href, children, primary }: LinkType) => (
   <NextLink
     href={href}
     className={classNames(styles.link, {
-      [`${styles.link}${variant}`]: variant,
+      [`${styles.linkPrimary}`]: primary,
     })}
   >
     {children}

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { ReactElement } from 'react';
 
 export type ChildrenType = {
@@ -20,7 +22,7 @@ export type CurrentPostType = {
 export type LinkType = {
   children: string;
   href: string;
-  variant?: 'Primary';
+  primary?: boolean;
 };
 
 export type CommentsAccordionType = {
@@ -36,7 +38,7 @@ export type CommentsAccordionType = {
 export type ImageWrapType = {
   children: ReactElement;
   withBorder?: boolean;
-  size?: 'Lg';
+  lg?: boolean;
 };
 
 export type ButtonType = {

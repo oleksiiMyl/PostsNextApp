@@ -9,7 +9,7 @@ const CurrentPost = ({ userId, userName, title, body, children }: CurrentPostTyp
     <p className={styles.currentPostBody}>{body}</p>
     <p className={styles.currentPostAuthor}>
       Author:
-      <Link href={`/user/${userId}`} variant="Primary">
+      <Link href={`/user/${userId}`} primary>
         {userName}
       </Link>
     </p>

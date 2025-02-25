@@ -9,7 +9,7 @@ import icon404 from '../../public/404.png';
 
 const NotFound = () => (
   <ErrorContent>
-    <ImageWrap size="Lg">
+    <ImageWrap lg>
       <Image src={icon404} alt="not found" priority />
     </ImageWrap>
     <Title>Not Found</Title>

@@ -28,7 +28,7 @@ export default function Error({
 
   return (
     <ErrorContent>
-      <ImageWrap size="Lg">
+      <ImageWrap lg>
         <Image src={ErrorIcon} alt="not found" priority />
       </ImageWrap>
       <Title>Something went wrong!</Title>

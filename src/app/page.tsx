@@ -24,7 +24,7 @@ const Posts = async () => {
         {posts.map((post) => (
           <ListItem key={post.id}>
             <PostCard title={post.title}>
-              <Link href={`/post/${post.id}`} variant="Primary">
+              <Link href={`/post/${post.id}`} primary>
                 Details
               </Link>
             </PostCard>

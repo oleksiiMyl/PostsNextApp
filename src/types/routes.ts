@@ -1,5 +1,3 @@
 export type RouteByIdType = {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
 };
