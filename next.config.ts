@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   output: 'export',
   distDir: 'dist',
   sassOptions: {
-    additionalData: '@import "src/styles/variables.scss";',
+    prependData: '@use "src/styles/variables.scss" as *;',
   },
 };
 
