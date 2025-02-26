@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as *;
+
 .link {
   transition: color 0.3s;
   color: $text-color;

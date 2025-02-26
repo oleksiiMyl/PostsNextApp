@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as *;
+
 .errorContent {
   display: flex;
   flex-direction: column;

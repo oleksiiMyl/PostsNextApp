@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as *;
+
 .list {
   list-style: none;
   margin: $indent-md 0;

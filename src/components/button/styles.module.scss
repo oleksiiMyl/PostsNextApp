@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as *;
+
 .button {
   min-width: 120px;
   padding: $indent-sm $indent-md;

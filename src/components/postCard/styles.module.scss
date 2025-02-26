@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as *;
+
 .postCard {
   background-color: $white-color;
   padding: $indent-sm;

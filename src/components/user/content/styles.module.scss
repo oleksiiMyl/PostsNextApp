@@ -1,3 +1,5 @@
+@use '../../../styles/variables.scss' as *;
+
 .userContent {
   display: flex;
   margin: $indent-lg 0;

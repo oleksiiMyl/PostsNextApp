@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as *;
+
 .title {
   margin: $indent-lg 0;
   text-align: center;
